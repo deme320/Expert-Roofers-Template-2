@@ -1,0 +1,695 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: white;
+  background-color: #00154A;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #00154A;
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 50; 
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+}
+
+.jdnl{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.a{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px;
+  text-decoration-line: none;
+}
+
+a{
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration-line: none;
+  color: white;
+}
+
+.header button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.3s;
+}
+
+.header button:hover {
+  background-color: white;
+  color: #00154A;
+}
+
+/* Images */
+img{
+  height: 70%;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Cards Section */
+.cards{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #8089A7;
+}
+
+.cards h1{
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00154A;
+}
+
+.cards h3{
+  font-size: 1.3rem;
+  color: #00154A;
+  font-weight: 500;
+  margin: 0;
+  position: relative;
+  top: 120px;
+  right: 160px;
+}
+
+.cards card{
+  display: inline-block;
+  width: 30%;
+  margin: 0 1.5%;
+  vertical-align: top;
+  position: relative;
+}
+
+.cards card img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.cards card h2{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: white;
+  padding: 15px 20px;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #00154A;
+  border-radius: 4px;
+  text-align: left;
+}
+
+/* Text Section */
+.text{
+  background-color: #00154A;
+}
+
+/* Cards2 Section */
+.cards2{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 80px;
+  max-width: 1400px;
+  margin: auto;
+  color: #fff;
+  background: #00154A;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.cards2 > div {
+  flex: 1;
+}
+
+.cards2 h3 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.cards2 .top {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.cards2 .bottom {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* Sponsors Section */
+.sponsors{
+  background-color: #8089A7;
+  color: #00154A;
+  min-height: 400px;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.its{
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.logos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  margin: 0 auto;
+}
+
+.logos img{
+  max-width: 180px;
+  height: auto;
+}
+
+/* Why Choose Us Section */
+.wcu {
+  background: #03154a;
+  padding: 100px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  color: #fff;
+  position: relative;
+}
+
+.sug1,
+.sug2,
+.sug3,
+.sug4 {
+  max-width: 420px;
+}
+
+.sug1 h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.wcu .top {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-left: 44px;
+  position: relative;
+  text-align: left;
+}
+
+.wcu .top::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+  color: #03154a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.wcu .bottom {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+  padding-left: 44px;
+  text-align: left;
+}
+
+.wcu img{
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Register Section */
+.register{
+  background-color: #03154a;
+  color: white;
+  padding: 80px 40px;
+}
+
+.register h1{
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.register label{
+  font-size: 0.9rem;
+  color: white;
+  text-align: left;
+}
+
+.register input,
+.register textarea{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 8px 4px;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+}
+
+.register input:focus,
+.register textarea:focus{
+  border-bottom-color: #4a90e2;
+}
+
+.register textarea{
+  resize: vertical;
+  min-height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.register button{
+  background-color: white;
+  color: #03154a;
+  border: none;
+  padding: 12px 50px;
+  font-size: 1rem;
+  font-weight: 600; 
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  width: fit-content;
+}
+
+.register button:hover{
+  background-color: #e6e6e6;
+}
+
+/* Footer */
+.footer {
+  background: #001a4d;
+  padding: 60px 40px 30px;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 16px;
+  line-height: 1.8;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  margin: 0 0 8px 0;
+}
+
+.footer-section a:hover {
+  opacity: 0.8;
+}
+
+.brand h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.hours-list,
+.links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hours-list li,
+.links-list li {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.contact-info h3 {
+  text-align: left;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  justify-content: flex-start;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Smooth Scroll */
+html{
+  scroll-behavior: smooth;
+}
+
+/* Tablet (1024px and below) */
+@media screen and (max-width: 1024px) {
+  .wcu {
+    grid-template-columns: 1fr;
+    padding: 60px 40px;
+  }
+  
+  .wcu img {
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .cards2 {
+    padding: 60px 40px;
+    gap: 30px;
+  }
+}
+
+/* Mobile (768px and below) */
+@media screen and (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 20px 15px;
+    min-height: 250px;
+  }
+
+  .title {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .a {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .a a {
+    font-size: 14px;
+  }
+
+  .header button {
+    position: static;
+    transform: none;
+    margin: 20px auto 0;
+    display: block;
+  }
+
+  .cards {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .cards h1 {
+    font-size: 1.8rem;
+  }
+
+  .cards h3 {
+    font-size: 1.1rem;
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .cards card {
+    width: 100%;
+    margin: 0 0 30px 0;
+    display: block;
+  }
+
+  .cards card img {
+    height: 350px;
+  }
+
+  .cards2 {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .cards2 h3 {
+    font-size: 1.5rem;
+  }
+
+  .sponsors {
+    padding: 40px 20px;
+  }
+
+  .its h1 {
+    font-size: 1.8rem;
+  }
+
+  .logos {
+    gap: 30px;
+  }
+
+  .logos img {
+    max-width: 120px;
+  }
+
+  .wcu {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .sug1, .sug2, .sug3, .sug4 {
+    max-width: 100%;
+  }
+
+  .sug1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .wcu .top {
+    font-size: 1.1rem;
+  }
+
+  .wcu .bottom {
+    font-size: 0.95rem;
+  }
+
+  .register {
+    padding: 40px 20px;
+  }
+
+  .register h1 {
+    font-size: 1.8rem;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 40px 20px 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .footer-section h3,
+  .footer-section p,
+  .footer-section a,
+  .hours-list li,
+  .links-list li,
+  .contact-info h3,
+  .contact-info p,
+  .brand h2 {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* Small Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  .header button {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  .cards h1,
+  .register h1,
+  .sug1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .cards card img {
+    height: 280px;
+  }
+
+  .cards2 h3 {
+    font-size: 1.2rem;
+  }
+
+  .register button {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}

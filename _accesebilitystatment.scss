@@ -1,0 +1,189 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header {
+            background-color: #0a1e4a;
+            color: white;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .nav {
+            display: flex;
+            gap: 3rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .intro-section {
+            background-color: #f5f5f5;
+            padding: 4rem 5%;
+        }
+
+        .intro-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .intro-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .intro-content em {
+            font-style: italic;
+        }
+
+        .intro-content a {
+            color: #0a1e4a;
+            text-decoration: underline;
+        }
+
+        .statement-section {
+            background-color: #0a1e4a;
+            color: white;
+            padding: 4rem 5%;
+        }
+
+        .statement-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin: 3rem 0 1.5rem 0;
+            font-weight: 700;
+        }
+
+        .statement-content > p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .statement-content em {
+            font-style: italic;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            margin: 3rem 0;
+        }
+
+        ul {
+            margin: 1.5rem 0 1.5rem 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+        }
+
+        .footer {
+            background-color: #0a1e4a;
+            color: white;
+            padding: 4rem 5% 3rem 5%;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .footer-column h3 {
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .footer-column p {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 3rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.2rem;
+            margin-top: 0;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                gap: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
