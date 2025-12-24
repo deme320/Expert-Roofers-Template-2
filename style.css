@@ -27,7 +27,6 @@ p{
   text-align: center;
 }
 
-/* Header */
 header {
   background-color: #00154A;
   margin: 0;
@@ -92,7 +91,6 @@ a{
   color: #00154A;
 }
 
-/* Images */
 img{
   height: 70%;
   width: 100%;
@@ -100,7 +98,6 @@ img{
   object-fit: cover;
 }
 
-/* Cards Section */
 .cards{
   display: flex;
   flex-direction: row;
@@ -156,12 +153,10 @@ img{
   text-align: left;
 }
 
-/* Text Section */
 .text{
   background-color: #00154A;
 }
 
-/* Cards2 Section */
 .cards2{
   display: flex;
   justify-content: space-between;
@@ -199,7 +194,6 @@ img{
   opacity: 0.9;
 }
 
-/* Sponsors Section */
 .sponsors{
   background-color: #8089A7;
   color: #00154A;
@@ -231,7 +225,6 @@ img{
   height: auto;
 }
 
-/* Why Choose Us Section */
 .wcu {
   background: #03154a;
   padding: 100px 80px;
@@ -295,7 +288,6 @@ img{
   object-fit: cover;
 }
 
-/* Register Section */
 .register{
   background-color: #03154a;
   color: white;
@@ -367,7 +359,7 @@ img{
   background-color: #e6e6e6;
 }
 
-/* Footer */
+
 .footer {
   background: #001a4d;
   padding: 60px 40px 30px;
@@ -473,12 +465,10 @@ img{
   text-decoration: none;
 }
 
-/* Smooth Scroll */
 html{
   scroll-behavior: smooth;
 }
 
-/* Tablet (1024px and below) */
 @media screen and (max-width: 1024px) {
   .wcu {
     grid-template-columns: 1fr;
@@ -500,7 +490,7 @@ html{
   }
 }
 
-/* Mobile (768px and below) */
+
 @media screen and (max-width: 768px) {
   header {
     height: auto;
@@ -663,7 +653,6 @@ html{
   }
 }
 
-/* Small Mobile (480px and below) */
 @media screen and (max-width: 480px) {
   header h1 {
     font-size: 1.3rem;
@@ -692,4 +681,5 @@ html{
     width: 100%;
     padding: 12px 20px;
   }
+
 }
